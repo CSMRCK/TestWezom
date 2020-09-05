@@ -1,0 +1,30 @@
+.upperContent {
+  display: flex;
+  justify-content: space-between;
+}
+.UpperLogo {
+  margin: 4px 0 43px;
+}
+.upperMenu {
+  width: 325px;
+}
+.upperMenuHeader {
+  display: flex;
+  height: 56px;
+}
+.upperMenuHeaderBurger {
+  display: flex;
+  width: 61px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #db7200;
+}
+.upperMenuHeaderBody {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.upperMenuHeaderBody p {
+  margin-left: 32px;
+}

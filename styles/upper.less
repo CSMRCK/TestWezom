@@ -1,0 +1,493 @@
+//main: styles.less
+.Upper {
+    margin-bottom: 30px;
+}
+
+.upperContent {
+    display: flex;
+    justify-content: space-between;
+
+    @media @noteHD {
+        margin: 0 20px;
+    }
+
+    @media @tablet {
+        flex-wrap: wrap;
+    }
+}
+
+.leftUpperBlock {
+    margin-right: 20px;
+
+    @media @laptop {
+        margin-left: 20px;
+    }
+}
+
+.UpperLogo {
+    margin: 12px 0 43px;
+}
+
+.upperMenu {
+    width: 325px;
+
+    @media @laptop {
+        width: 75%;
+    }
+}
+
+.upperMenuHeader {
+    display: flex;
+    height: 56px;
+    margin-bottom: 11px;
+}
+
+.upperMenuHeaderBurger {
+    display: flex;
+    width: 61px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #db7200;
+}
+
+.upperMenuHeaderBody {
+    display: flex;
+    align-items: center;
+    width: 81%;
+    height: 100%;
+    background: rgb(255, 140, 0);
+    background: linear-gradient(90deg, rgba(255, 140, 0, 1) 0%,
+            rgba(255, 174, 0, 1) 66%, rgba(255, 174, 0, 1) 100%);
+}
+
+.upperMenuHeaderBody p {
+    margin-left: 23px;
+    color: @white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.upperMenuLinks {
+    height: 100%;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.upperMenuLink:last-child {
+    border-bottom: none;
+}
+
+.upperMenuLink {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.upperMenuLinkBody {
+    padding: 18px 0 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.upperMenuLinkBody p {
+    text-transform: uppercase;
+    color: #3b3b3b;
+    font-weight: 700;
+}
+
+.upperMenuLinkBody img {
+    width: 8px;
+    height: 14px;
+}
+
+
+.rightUpperBlock {
+    width: 100%;
+
+    @media @laptop {
+        margin-right: 20px;
+    }
+}
+
+.upRight {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+
+    @media @laptop {
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.phones {
+    margin-top: 8px;
+    margin-right: 124px;
+    height: 49px;
+    display: flex;
+
+    @media @laptop {
+        margin-right: 0;
+    }
+
+    @media @mobile-sm {
+        flex-wrap: wrap;
+    }
+}
+
+.phonesPart {
+    width: 378px;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+
+    @media @noteHD {
+        width: 100%;
+    }
+}
+
+.phonesPartInside {
+    width: 323px;
+    display: flex;
+    align-items: center;
+
+    p {
+        margin-left: 12px;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 16px;
+    }
+
+    .secondNum {
+        margin-left: 28px !important;
+    }
+
+    @media @mobile-sm {
+        flex-direction: column;
+        width: 200px;
+    }
+}
+
+.callMe {
+    font-family: 'Myriad Pro', sans-serif;
+    max-width: 197px;
+    padding: 0 50px 0 45px;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.callMe img {
+    padding: 0 7px;
+}
+
+.cofaba {
+    display: flex;
+    text-transform: uppercase;
+    max-height: 64px;
+
+    @media @laptop {
+        margin-top: 40px;
+    }
+
+}
+
+.cofabaItem {
+    position: relative;
+    padding-right: 27px;
+    border-right: 1px solid #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media @mobile-sm {
+        padding-right: 10px;
+    }
+}
+
+.cofabaItem img {
+    margin-top: 7px;
+    width: 46px;
+    height: 34px;
+}
+
+.cofabaItem p {
+    margin: 8px 0 6px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.favIcon {
+    margin-bottom: 2px;
+    width: 34px !important;
+    height: 33px !important;
+}
+
+.secondChild {
+    margin-left: 27px;
+}
+
+.lastChild {
+    border-right: none !important;
+    margin-left: 36px;
+}
+
+.basketIcon {
+    width: 40px !important;
+    height: 35px !important;
+}
+
+.counter {
+    position: absolute;
+    top: -15px;
+    display: none !important;
+    width: 20px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: @white;
+    background-color: @orange;
+    font-size: 11px;
+    -webkit-box-shadow: 0px 10px 6px -3px rgba(255, 137, 0, 0.9);
+    -moz-box-shadow: 0px 10px 6px -3px rgba(255, 137, 0, 0.9);
+    box-shadow: 0px 10px 6px -3px rgba(255, 137, 0, 0.9);
+}
+
+.counter:before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    border: solid 6px transparent;
+    border-top-color: @orange;
+    z-index: 1;
+}
+
+.open {
+    display: flex !important;
+}
+
+.searchRightBar {
+    position: relative;
+    display: flex;
+    height: 56px;
+    margin-bottom: 20px;
+}
+
+.searchRight {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+
+    @media @noteHD {
+        width: 80%;
+    }
+
+    @media @laptop {
+        width: 66%;
+    }
+
+}
+
+.searchRightInput {
+    background-color: transparent;
+    border: none;
+    padding-left: 28px;
+    width: 90%;
+}
+
+.searchRightInput:focus,
+.searchRightInput:hover {
+    outline: none;
+    border: none;
+}
+
+.searchRightButton {
+    width: 166px;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.rightMain {
+    min-height: 374px;
+    width: 100%;
+    background-color: @gray;
+}
+
+.rightMainHead {
+    background-color: @bgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 46px 0 14px;
+}
+
+.linkCard {
+    height: 72px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.linkCard img {
+    padding-right: 13px;
+    display: flex;
+    align-self: center;
+}
+
+.linkCard p {
+    color: #a0a6ad;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-self: center;
+}
+
+.activeLinkCard {
+    border-bottom: 2px solid #ffc925;
+}
+
+.rightMainBody {
+    margin: 24px 34px 0 37px;
+}
+
+.tabs {
+    display: flex;
+    width: 275px;
+    height: 38px;
+    background-color: @white;
+    border: 3px solid @white;
+
+    @media @mobile-sm {
+        width: 210px;
+    }
+}
+
+.tab {
+    background-color: @white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    color: @gray;
+    font-size: 14px;
+    border: none;
+    width: 132px;
+    height: 100%;
+}
+
+.activeTab {
+    background-color: @orange;
+    color: @white;
+    width: 142px;
+    height: 100%;
+}
+
+.selectsPrice {
+    display: flex;
+    margin: 0 -20px 23px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.blockSP {
+    position: relative;
+    margin-top: 23px;
+    width: 222px;
+    height: 40px;
+    background-color: @white;
+}
+
+.priceSP {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 23px;
+    width: 222px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.priceSP p {
+    color: @white;
+}
+
+.blockSP:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: @white;
+    bottom: 0;
+    margin-bottom: -3px;
+}
+
+.priceSPInput {
+    position: relative;
+    width: 74px;
+    height: 90%;
+}
+
+.continerInput {
+    position: relative;
+    height: 100%;
+}
+
+.continerInput:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 76px;
+    margin-left: 1px;
+    left: 0;
+    background-color: #ffffff;
+    bottom: 0;
+    margin-bottom: -3px;
+}
+
+.priceSPInput:focus,
+.priceSPInput:hover {
+    outline: white;
+}
+
+.calcButtons {
+    display: flex;
+    padding-bottom: 28px;
+    justify-content: space-between;
+
+    @media @mobile-sm {
+        flex-wrap: wrap;
+    }
+}
+
+.clear {
+    display: flex;
+    padding: 0 38px;
+    height: 50px;
+    background-color: #ff4800 !important;
+}
+
+.clear img {
+    padding-right: 9px;
+}
+
+.clear p {
+    font-size: 14px;
+}
+
+.filter {
+    text-transform: uppercase;
+    height: 50px;
+    padding: 0 32px;
+    font-weight: 700;
+    font-size: 14px;
+    background: linear-gradient(90deg, #ff8c00 0%, #ffae00 66%, #ffae00 100%);
+}

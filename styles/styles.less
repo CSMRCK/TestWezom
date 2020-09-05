@@ -1,0 +1,42 @@
+@import "vars.less";
+@import "header.less";
+@import "upper.less";
+@import "select.less";
+@import "items.less";
+@import "footer.less";
+@import "enter.less";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: @orange;
+    color: @white;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.wrongInput {
+    position: absolute;
+    top: -15px;
+    font-size: 10px;
+    color: red;
+}

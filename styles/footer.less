@@ -1,0 +1,244 @@
+//main: styles.less
+
+.mainFooter {
+    background-color: @gray;
+    width: 100%;
+
+}
+
+.footerUpper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 31px;
+    margin-top: 61px;
+    border-bottom: 1px solid #757575;
+
+    @media @laptop {
+        padding-left: 20px;
+    }
+}
+
+.firstBlock {
+    width: 575px;
+    margin-bottom: 40px;
+
+    @media @noteHD {
+        width: 80%;
+    }
+}
+
+.titleName {
+    border-bottom: 1px solid #7a7a7a;
+    margin-bottom: 28px;
+}
+
+.titleName h3 {
+    position: relative;
+    display: inline-block;
+    color: #cbcbcb;
+    font-size: 20px;
+    padding-bottom: 10px;
+    // border-bottom: 1px solid #ff8500;
+}
+
+.titleName h3:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    background: #ff8500;
+}
+
+.infoBlockFLabel {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    color: #cbcbcb;
+}
+
+.infoBlockF {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 26px;
+    color: @white;
+    margin-bottom: 11px;
+}
+
+.FirstBlockIB {
+    display: flex;
+    height: 50px;
+
+    @media @mobile-sm {
+        flex-wrap: wrap;
+    }
+}
+
+.FirstBlockIB input {
+    height: 100%;
+    width: 405px;
+    border: none;
+    padding: 0 30px;
+}
+
+.subscribe {
+    text-transform: uppercase;
+    min-width: 170px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.likedBlocks {
+    max-width: 670px;
+    display: flex;
+    justify-content: space-between;
+
+    @media @noteHD {
+        flex-wrap: wrap;
+    }
+}
+
+.firstLinkedBlock,
+.secondBlock,
+.secondLinkedBlock {
+    width: 210px;
+}
+
+.firstLinkedBlock {
+    margin-right: 21px;
+}
+
+.secondBlock {
+    margin-right: 22px;
+}
+
+.footerList {
+    list-style: none;
+}
+
+.footerListItem {
+    margin-bottom: 17px;
+}
+
+.footerListItem a {
+    font-size: 13px;
+    color: @white;
+    text-decoration: none;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+.footerDown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 26px;
+    padding-bottom: 8px;
+
+    @media @laptop {
+        padding-left: 20px;
+    }
+}
+
+.footerDownLeft {
+    display: flex;
+
+    @media @mobile-sm {
+        flex-wrap: wrap;
+    }
+}
+
+.downLogo {
+    padding-right: 31px;
+    border-right: 1px solid #787878;
+}
+
+.footerLabel {
+    font-size: 12px;
+    color: #a0a9b2;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.footerDownRight {
+    display: flex;
+    justify-content: space-between;
+    width: 670px;
+
+    @media @laptop {
+        padding-top: 20px;
+    }
+
+    @media @mobile-sm {
+        flex-wrap: wrap;
+    }
+}
+
+.footerSoicals {
+    display: flex;
+}
+
+.itemContainer {
+    width: 47px;
+    height: 47px;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #7b8092;
+}
+
+.golden {
+    border: 1px solid #ffc925;
+}
+
+.vk {
+    width: 16px;
+    height: 9px;
+}
+
+.fb {
+    width: 8px;
+    height: 16px;
+}
+
+.tw {
+    width: 16px;
+    height: 13px;
+}
+
+.yt {
+    width: 16px;
+    height: 11px;
+}
+
+.footerCompany {
+    display: flex;
+    align-self: center;
+}
+
+.wlogo {
+    display: flex;
+    height: 100%;
+    align-self: center;
+}
+
+.WenLogo {
+    width: 42px;
+    height: 15px;
+    padding-right: 19px;
+}
+
+.companyInfo {
+    padding-left: 2px;
+    border-left: 1px solid #787878;
+}
+
+.companyInfo p {
+    padding-left: 16px;
+    font-size: 14px;
+    color: @white;
+}

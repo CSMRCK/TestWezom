@@ -1,0 +1,94 @@
+//main: styles.less
+
+.mainHeader {
+    background-color: @gray;
+    max-height: 50px;
+    position: relative;
+    margin-bottom: 29px;
+}
+
+.navHeader {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+
+}
+
+.burger {
+    img {
+        width: 20px;
+        height: 20px;
+    }
+
+    display: none;
+    padding-left: 20px;
+
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.menuHeader {
+    width: 457px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media @noteHD {
+        padding-left: 20px;
+    }
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+.menuHeader a {
+    display: flex;
+    justify-content: center;
+    color: @text-gray;
+    text-decoration: none;
+}
+
+.active {
+    color: @white  !important;
+}
+
+.menuHeader .active:after {
+    color: @white  !important;
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 0;
+    margin: 0 auto;
+    width: 105px;
+    background: #ffc925;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.enterHeader {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.enterBtn {
+    width: 124px;
+    height: 100%;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.enterLogo {
+    padding: 0 5px 2px 0;
+}

@@ -1,0 +1,147 @@
+//main: styles.less
+
+.modalEnterMain,
+.modalCallMain,
+.modalDone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+    p {
+        color: #3b3b3b;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+}
+
+.modaleopen {
+    display: block;
+}
+
+.enter {
+    position: relative;
+    background-color: @white;
+    padding: 29px 37px 34px 42px;
+    max-width: 675px;
+    max-height: 367px;
+    margin: 16% auto 0;
+    display: flex;
+}
+
+.exitModal {
+    cursor: pointer;
+    position: absolute;
+    right: -43px;
+    top: -42px;
+}
+
+.modalLeft {
+    border-right: 1px solid #dbdbdb;
+    padding-right: 40px;
+}
+.modalInput
+     {
+        margin-bottom: 19px;
+        width: 275px;
+        color: #d2d2d2;
+        border: 1px solid #d2d2d2;
+        padding: 11px 13px;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+        color: #d2d2d2;
+    }
+
+.TitleModal {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3b3b3b;
+    margin-bottom: 26px;
+}
+
+.rememberMe {
+    margin: 8px 0 13px;
+    display: flex;
+}
+
+.checkbox {
+    margin: 2px 7px 0 0;
+}
+
+.help {
+    display: flex;
+
+    a {
+        color: #3b3b3b;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+}
+
+.modalEnter {
+    width: 210px;
+    height: 50px;
+    background-color: #afb9c6 !important;
+    font-size: 14px;
+    margin-top: 27px;
+}
+
+.modalRight {
+    width: 100%;
+    margin-left: 38px;
+}
+
+.modalsocial {
+    margin-left: 2px;
+    margin-top: 46px;
+    width: 100%;
+
+    button {
+        margin-bottom: 24px;
+        font-size: 14px;
+        height: 50px;
+        color: white;
+        border: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            margin-right: 12px;
+        }
+    }
+}
+
+.btnFb {
+    background-color: #3b5998;
+}
+
+.btnTw {
+    background-color: #41abe1;
+}
+
+.btnG {
+    background-color: #ea4335;
+}
+
+.callback {
+    position: relative;
+    background-color: @white;
+    padding: 35px 38px;
+    max-width: 300px;
+    
+    margin: 16% auto 0;
+    display: flex;
+}
+.callMeBack{
+    margin: 0 auto;
+    width: 210px;
+    height: 50px;
+}
